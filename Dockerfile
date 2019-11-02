@@ -4,6 +4,8 @@ MAINTAINER han.xiao@zalando.de
 
 WORKDIR /
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install necessary packages.
 RUN apt-get -y update && \
     apt-get -y install jq awscli && \
